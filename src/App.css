@@ -1,0 +1,177 @@
+.app-container {
+  background-color: white;
+  color: black;
+  width: 23%;
+  padding: 8px 6px;
+  border-radius: 15px;
+  margin: auto;
+  margin-top: 1%;
+}
+.app-container header input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+}
+
+.app-container header {
+  border-radius: 8px;
+  border: 2px solid blue;
+  display: flex;
+}
+
+.app-container header button{
+  border: none;
+  width: 25%;
+  border-radius: 0px 0px 5px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 16px;
+}
+
+main {
+  margin-top: 6%;
+  text-align: center;
+}
+
+div p {
+  font-size: 22px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+div b {
+  font-size: 14px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+.coord {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  gap: 25px;
+}
+
+.coord div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.country,
+h3 {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.weather-container h3 {
+  color: orange;
+  font-size: 30px;
+}
+
+.atmosphere {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.end {
+  margin-top: 5%;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 1%;
+}
+
+.atmosphere .humidity img,
+.atmosphere .wind-speed img {
+  height: 12vh;
+}
+
+.coord span:nth-child(2) {
+  font-weight: 700;
+}
+
+.country {
+  font-weight: 500;
+  color: burlywood;
+}
+
+.weather-container p span {
+  font-weight: 500;
+}
+
+/* Responsive Design for Mobile Screens */
+@media (max-width: 768px) {
+  .app-container {
+    width: 90%;
+    height: 680px;
+    padding: 8px;
+    margin-top: 5%;
+  }
+
+  .app-container header {
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+
+  .app-container header input {
+    /* font-size: 16px; */
+    padding: 10px;
+  }
+
+  .app-container header i {
+    font-size: 20px;
+    margin-top: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .coord {
+    /* flex-direction: column; */
+    gap: 10px;
+    margin-top: 4%;
+  }
+
+  .atmosphere {
+    /* flex-direction: column; */
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .atmosphere .humidity img,
+  .atmosphere .wind-speed img {
+    height: 10vh;
+  }
+
+  .end {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app-container {
+    margin-top: 100px;
+  }
+
+  .coord span:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .weather-container p,
+  .weather-container img,
+  .weather-container h3,
+  .weather-container .end,
+  .weather-container .country,
+  .weather-container .coord {
+    margin-top: 20px;
+  }
+
+  .weather-container .atmosphere {
+    margin-top: 18px;
+  }
+}
